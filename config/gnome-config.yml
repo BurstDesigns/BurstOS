@@ -1,0 +1,12 @@
+# KDE configuration for BurstOS images
+
+modules:
+  # - type: files
+  #   files:
+  #     - kde: /usr
+
+  - type: default-flatpaks
+    user:
+      repo-name: flathub-user
+      install:
+        - com.mattjakeman.ExtensionManager

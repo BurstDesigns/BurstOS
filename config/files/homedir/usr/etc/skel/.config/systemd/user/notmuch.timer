@@ -1,0 +1,10 @@
+[Unit]
+Description=Notmuch email fetcher and indexer
+
+[Timer]
+OnCalendar=*:0/1
+Unit=notmuch.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target

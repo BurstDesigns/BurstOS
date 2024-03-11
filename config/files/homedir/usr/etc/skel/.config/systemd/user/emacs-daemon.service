@@ -1,0 +1,13 @@
+[Unit]
+Description=Fedora Distrobox Emacs Startup
+After=graphical.target
+
+[Service]
+Type=simple
+Environment="NOTMUCH_CONFIG=/home/maximerv/.config/notmuch/notmuchrc"
+ExecStart=distrobox-enter  -n fedora -- /bin/sh -l -c  "emacs  --fg-daemon"
+Restart=on-failure
+StandardOuput=file:%h/log_file
+
+[Install]
+WantedBy=default.target

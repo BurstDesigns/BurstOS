@@ -1,0 +1,52 @@
+# Base configuration for every BurstOS images
+
+modules:
+  - type: files
+    files:
+      - usr: /usr
+      - homedir: /usr
+
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode # don't add "Nerd Font" suffix.
+        - Hack
+        - SourceCodePro
+        - Terminus
+        - JetBrainsMono
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Roboto
+        - Open Sans
+        - Fira Sans
+
+  - type: rpm-ostree
+    remove:
+      - firefox # default firefox removed in favor of flatpak
+      - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
+
+#   - type: bling # configure what to pull in from ublue-os/bling
+#     install:
+#       - justfiles
+#         # add "!include /usr/share/ublue-os/just/100-bling.just"
+#         # in your custom.just (added by default) or local justfile
+
+  - type: default-flatpaks
+    system:
+      repo-name: flathub-system
+      repo-title: "Flathub (system-wide)"
+      install:
+        - org.mozilla.firefox
+    user:
+      repo-name: flathub-user
+      install:
+        - org.keepassxc.KeePassXC
+        - com.github.zocker_160.SyncThingy
+        - org.mozilla.Thunderbird
+        - org.onlyoffice.desktopeditors
+        - com.discordapp.Discord
+        - com.anydesk.Anydesk
+
+  # - type: yafti
+
+  - type: signing
