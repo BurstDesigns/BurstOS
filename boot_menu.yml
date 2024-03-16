@@ -2,4 +2,8 @@ ublue_variants:
   - label: burstdesigns/burstos
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: BurstOS
+      - label: BurstOS-workstation
+      - label: BurstOS-laptop
+      - label: BurstOS-gnome-workstation
+      - label: BurstOS-gnome-laptop
+      
