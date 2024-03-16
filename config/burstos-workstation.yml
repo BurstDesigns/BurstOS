@@ -11,7 +11,4 @@ modules:
 
   - from-file: common-config.yml
   - from-file: kde-config.yml
-
-  - type: rpm-ostree
-    install:
-      - liquidctl
+  - from-file: workstation-config.yml

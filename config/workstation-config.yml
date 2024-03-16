@@ -1,0 +1,7 @@
+# Workstation configuration for BurstOS images
+
+modules:
+
+  - type: rpm-ostree
+    install:
+      - liquidctl
