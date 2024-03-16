@@ -1,17 +1,14 @@
 # image will be published to ghcr.io/<user>/<name>
-name: burstos-gnome-laptop
+name: burstos-gnome-workstation
 # description will be included in the image's metadata
 description: Personal OS image for VFX and content creation
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/silverblue-nvidia
 image-version: 39 # latest is also supported if you want new updates ASAP
 
 modules:
 
   - from-file: common-config.yml
   - from-file: gnome-config.yml
-  
-  - type: rpm-ostree
-    install:
-      - liquidctl
+  - from-file: workstation-config.yml
