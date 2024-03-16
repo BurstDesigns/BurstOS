@@ -6,7 +6,15 @@ modules:
   #     - kde: /usr
 
   - type: default-flatpaks
+    system:
+      repo-url: https://nightly.gnome.org/gnome-nightly.flatpakrepo
+      repo-name: gnome-nightly
+      repo-title: "Gnome Nightly (system-wide)"
     user:
-      repo-name: flathub-user
+      repo-name: flathub
       install:
         - com.mattjakeman.ExtensionManager
+      repo-name: gnome-nightly
+      repo-title: "Gnome Nightly (user)"
+      install:
+        - org.gnome.Ptyxis.Devel
