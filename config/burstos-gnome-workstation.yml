@@ -11,3 +11,7 @@ modules:
 
   - from-file: common-config.yml
   - from-file: gnome-config.yml
+  
+  - type: rpm-ostree
+    install:
+      - liquidctl
