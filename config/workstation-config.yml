@@ -5,3 +5,9 @@ modules:
   - type: rpm-ostree
     install:
       - liquidctl
+      - input-remapper
+
+  - type: systemd
+    system:
+      enabled:
+        - input-remapper.service
