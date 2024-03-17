@@ -38,9 +38,6 @@ modules:
       repo-title: "Flathub (system-wide)"
       install:
         - org.mozilla.firefox
-
-  - type: default-flatpaks
-    notify: true
     user:
       repo-name: flathub
       repo-title: "Flathub (user)"

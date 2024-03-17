@@ -10,11 +10,3 @@ modules:
       repo-name: flathub
       install:
         - com.mattjakeman.ExtensionManager
-
-  - type: default-flatpaks
-    user:
-      repo-name: gnome-nightly
-      repo-url: https://nightly.gnome.org/gnome-nightly.flatpakrepo
-      repo-title: "Gnome Nightly (user)"
-      install:
-        - org.gnome.Ptyxis.Devel
