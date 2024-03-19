@@ -54,6 +54,7 @@ modules:
       - mesa-libGLU
       - mtdev
       - pulseaudio-libs
+      - pango
       - xcb-util
       - alsa-lib
       - apr
