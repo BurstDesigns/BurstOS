@@ -1,0 +1,68 @@
+# image will be published to ghcr.io/<user>/<name>
+name: burstos-gnome-full-workstation
+# description will be included in the image's metadata
+description: Personal OS image for VFX and content creation
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/silverblue-nvidia
+image-version: 39 # latest is also supported if you want new updates ASAP
+
+modules:
+
+  - from-file: common-config.yml
+  - from-file: gnome-config.yml
+  - from-file: workstation-config.yml
+
+  - type: rpm-ostree
+    install:
+      - alsa-plugins-pulseaudio
+      - xcb-util-renderutil
+      - xcb-util-wm
+      - pulseaudio-libs
+      - xcb-util
+      - xcb-util-image
+      - xcb-util-keysyms
+      - libxkbcommon-x11
+      - libXrandr
+      - libXtst
+      - mesa-libGLU
+      - mtdev
+      - libSM
+      - libXcursor
+      - libXi
+      - libXinerama
+      - libxkbcommon
+      - libglvnd-egl
+      - libglvnd-glx
+      - libglvnd-opengl
+      - libICE
+      - librsvg2
+      - libSM
+      - libX11
+      - libXcursor
+      - libXext
+      - libXfixes
+      - libXi
+      - libXinerama
+      - libxkbcommon
+      - libxkbcommon-x11
+      - libXrandr
+      - libXrender
+      - libXtst
+      - libXxf86vm
+      - mesa-libGLU
+      - mtdev
+      - pulseaudio-libs
+      - xcb-util
+      - alsa-lib
+      - apr
+      - apr-util
+      - fontconfig
+      - freetype
+      - libglvnd
+      - fuse-libs
+      - nss
+      - libXcomposite
+      - libXdamage
+      - libXScrnSaver
+      - pciutils
