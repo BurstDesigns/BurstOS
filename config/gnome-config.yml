@@ -1,9 +1,13 @@
-# KDE configuration for BurstOS images
+# GNOME configuration for BurstOS images
 
 modules:
   # - type: files
   #   files:
   #     - kde: /usr
+
+  - type: rpm-ostree
+    install:
+      - zenity
 
   - type: default-flatpaks
     user:
