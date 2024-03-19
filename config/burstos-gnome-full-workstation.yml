@@ -50,6 +50,7 @@ modules:
       - libXrender
       - libXtst
       - libXxf86vm
+      - libxcrypt-compat
       - mesa-libGLU
       - mtdev
       - pulseaudio-libs
