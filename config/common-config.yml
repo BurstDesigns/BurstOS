@@ -22,7 +22,7 @@ modules:
 
   - type: rpm-ostree
     repos:
-      - https://copr.fedorainfracloud.org/coprs/stevenlin/emacs-pgtk-nativecomp/repo/fedora-%OS_VERSION%/stevenlin-emacs-pgtk-nativecomp-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/deathwish/emacs-pgtk-nativecomp/repo/fedora-%OS_VERSION%/deathwish-emacs-pgtk-nativecomp-fedora-%OS_VERSION%.repo
     install:
       - emacs
       - emacs-notmuch
