@@ -21,6 +21,9 @@ modules:
         - Fira Sans
 
   - type: rpm-ostree
+    install:
+      - emacs
+      - mpv
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -34,13 +37,13 @@ modules:
   - type: default-flatpaks
     notify: true
     system:
-      repo-name: flathub
-      repo-title: "Flathub (system-wide)"
+      # repo-name: flathub
+      # repo-title: "Flathub (system-wide)"
       install:
         - org.mozilla.firefox
     user:
-      repo-name: flathub
-      repo-title: "Flathub (user)"
+      # repo-name: flathub
+      # repo-title: "Flathub (user)"
       install:
         - org.keepassxc.KeePassXC
         - com.github.zocker_160.SyncThingy

@@ -11,6 +11,6 @@ modules:
 
   - type: default-flatpaks
     user:
-      repo-name: flathub
+      # repo-name: flathub
       install:
         - com.mattjakeman.ExtensionManager
