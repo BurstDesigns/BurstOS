@@ -27,6 +27,7 @@ modules:
       - emacs
       - emacs-notmuch
       - notmuch
+      - isync
       - mpv
     remove:
       - firefox # default firefox removed in favor of flatpak
