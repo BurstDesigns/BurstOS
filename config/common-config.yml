@@ -23,6 +23,7 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/deathwish/emacs-pgtk-nativecomp/repo/fedora-%OS_VERSION%/deathwish-emacs-pgtk-nativecomp-fedora-%OS_VERSION%.repo
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
       - emacs
       - emacs-notmuch
@@ -30,6 +31,7 @@ modules:
       - isync
       - mpv
       - git-lfs
+      - tailscale
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -57,5 +59,10 @@ modules:
         - org.onlyoffice.desktopeditors
         - com.discordapp.Discord
         - com.anydesk.Anydesk
+
+  - type: systemd
+    system:
+      enabled:
+        - tailscaled.service
 
   - type: signing
