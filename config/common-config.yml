@@ -29,6 +29,7 @@ modules:
       - emacs-notmuch
       - notmuch
       - isync
+      - msmtp
       - mpv
       - git-lfs
       - tailscale
