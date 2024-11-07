@@ -7,7 +7,8 @@ modules:
 
   - type: files
     files:
-      - kde: /usr
+      - source: kde
+        destination: /
 
   - type: default-flatpaks
     user:
