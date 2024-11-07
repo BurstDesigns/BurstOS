@@ -9,6 +9,6 @@ image-version: 40 # latest is also supported if you want new updates ASAP
 
 modules:
 
-  - from-file: common-config.yml
-  - from-file: gnome-config.yml
-  - from-file: workstation-config.yml
+  - from-file: image_configs/common.yml
+  - from-file: image_configs/gnome.yml
+  - from-file: image_configs/workstation.yml
