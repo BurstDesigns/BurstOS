@@ -69,6 +69,7 @@ modules:
       - libXdamage
       - libXScrnSaver
       - pciutils
+      - zlib
       - libnsl # houdini 19.5
       - nodejs # unreal remote control
       - java  # connectwise screenconnect
