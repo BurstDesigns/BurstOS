@@ -3,11 +3,13 @@
 modules:
 
   - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/blakegardner/xremap/repo/fedora-%OS_VERSION%/blakegardner-xremap-fedora-%OS_VERSION%.repo
     install:
       - zenity
+      - xremap-gnome
 
   - type: default-flatpaks
     user:
-      # repo-name: flathub
       install:
         - com.mattjakeman.ExtensionManager

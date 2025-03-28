@@ -47,13 +47,9 @@ modules:
   - type: default-flatpaks
     notify: true
     system:
-      # repo-name: flathub
-      # repo-title: "Flathub (system-wide)"
       install:
         - org.mozilla.firefox
     user:
-      # repo-name: flathub
-      # repo-title: "Flathub (user)"
       install:
         - org.keepassxc.KeePassXC
         - com.github.zocker_160.SyncThingy
