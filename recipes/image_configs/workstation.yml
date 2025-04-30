@@ -5,9 +5,13 @@ modules:
   - type: rpm-ostree
     install:
       - liquidctl
-      - ydotool
 
-  - type: systemd
-    system:
-      enabled:
-        - ydotool.service
+  - type: dnf
+    repos:
+      nonfree: negativo17
+    install:
+      packages:
+        - gnome-session-xsession # x11 session in fedora41
+        - xorg-x11-nvidia
+        - xorg-x11-xinit
+        - xorg-x11-drv-wacom
