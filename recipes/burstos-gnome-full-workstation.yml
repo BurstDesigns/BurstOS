@@ -79,4 +79,5 @@ modules:
     repos:
       nonfree: negativo17
     install:
-      - xorg-x11-nvidia
+      packages:
+        - xorg-x11-nvidia
