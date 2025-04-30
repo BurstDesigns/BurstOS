@@ -81,3 +81,4 @@ modules:
     install:
       packages:
         - xorg-x11-nvidia
+        - xorg-x11-xinit
