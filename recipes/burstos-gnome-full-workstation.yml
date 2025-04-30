@@ -73,3 +73,4 @@ modules:
       - libnsl # houdini 19.5
       - nodejs # unreal remote control
       - java  # connectwise screenconnect
+      - gnome-session-xsession # x11 session in fedora41
