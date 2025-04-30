@@ -75,9 +75,8 @@ modules:
       - java  # connectwise screenconnect
       - gnome-session-xsession # x11 session in fedora41
 
-  - type: rpm-ostree
+  - type: dnf
     repos:
-      - https://negativo17.org/repos/fedora-nvidia.repo
+      nonfree: negativo17
     install:
       - xorg-x11-nvidia
-      
