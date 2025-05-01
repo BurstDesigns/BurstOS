@@ -20,23 +20,26 @@ modules:
         - Open Sans
         - Fira Sans
 
-  - type: rpm-ostree
+  - type: dnf
     repos:
-      - https://copr.fedorainfracloud.org/coprs/zelezarof/emacs-pgtk-nativecomp/repo/fedora-%OS_VERSION%/zelezarof-emacs-pgtk-nativecomp-fedora-%OS_VERSION%.repo
-      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      files:
+        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
-      - emacs
-      - emacs-notmuch
-      - notmuch
-      - isync
-      - msmtp
-      - mpv
-      - git-lfs
-      - tailscale
-      - yt-dlp
+      packages:
+        - emacs
+        - emacs-notmuch
+        - notmuch
+        - isync
+        - msmtp
+        - mpv
+        - git-lfs
+        - tailscale
+        - yt-dlp
+        - ripgrep
     remove:
-      - firefox # default firefox removed in favor of flatpak
-      - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
+      packages:
+        - firefox # default firefox removed in favor of flatpak
+        - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
 
 #   - type: bling # configure what to pull in from ublue-os/bling
 #     install:

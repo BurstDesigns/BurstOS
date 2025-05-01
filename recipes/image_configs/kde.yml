@@ -1,9 +1,6 @@
 # KDE configuration for BurstOS images
 
 modules:
-  # - type: rpm-ostree
-  #   install:
-  #     - https://github.com/BurstDesigns/BurstOS/raw/main/config/files/misc/bismuth-3.1.4-2.fc38.x86_64.rpm
 
   - type: files
     files:
