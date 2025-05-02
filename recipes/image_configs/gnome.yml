@@ -4,7 +4,6 @@ modules:
 
   - type: dnf
     repos:
-      nonfree: negativo17
       copr:
         - blakegardner/xremap
     install:
@@ -12,10 +11,6 @@ modules:
         - zenity
         - xremap-gnome
         - gnome-session-xsession # x11 session in fedora41
-        - xorg-x11-nvidia
-        - xorg-x11-xinit
-        - xorg-x11-drv-wacom
-
 
   - type: default-flatpaks
     user:
