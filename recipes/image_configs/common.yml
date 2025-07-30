@@ -49,17 +49,17 @@ modules:
 
   - type: default-flatpaks
     notify: true
-    system:
-      install:
+    scope: system
+    install:
         - org.mozilla.firefox
-    user:
-      install:
-        - org.keepassxc.KeePassXC
-        - com.github.zocker_160.SyncThingy
-        - org.mozilla.Thunderbird
-        - org.onlyoffice.desktopeditors
-        - com.discordapp.Discord
-        - com.anydesk.Anydesk
+    scope: user
+    install:
+      - org.keepassxc.KeePassXC
+      - com.github.zocker_160.SyncThingy
+      - org.mozilla.Thunderbird
+      - org.onlyoffice.desktopeditors
+      - com.discordapp.Discord
+      - com.anydesk.Anydesk
 
   - type: systemd
     system:
