@@ -13,10 +13,11 @@ modules:
         - gnome-session-xsession # x11 session in fedora41
 
   - type: default-flatpaks
-    user:
-      install:
-        - com.mattjakeman.ExtensionManager
-        - page.tesk.Refine
+    configurations:
+      - scope: user
+        install:
+          - com.mattjakeman.ExtensionManager
+          - page.tesk.Refine
 
   - type: gnome-extensions
     install:

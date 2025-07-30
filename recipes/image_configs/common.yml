@@ -52,8 +52,7 @@ modules:
       - scope: system
         install:
           - org.mozilla.firefox
-      - notify: false
-        scope: user
+      - scope: user
         install:
           - org.keepassxc.KeePassXC
           - com.github.zocker_160.SyncThingy

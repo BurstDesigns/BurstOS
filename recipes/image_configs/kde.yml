@@ -8,8 +8,8 @@ modules:
         destination: /
 
   - type: default-flatpaks
-    user:
-      # repo-name: flathub-user
-      install:
-        - org.kde.gwenview
-        - org.kde.okular
+    configurations:
+      - scope: user
+        install:
+          - org.kde.gwenview
+          - org.kde.okular
