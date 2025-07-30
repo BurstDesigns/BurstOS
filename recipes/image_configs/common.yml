@@ -48,18 +48,18 @@ modules:
 #         # in your custom.just (added by default) or local justfile
 
   - type: default-flatpaks
-    notify: true
-    scope: system
-    install:
+    configurations:
+      - scope: system
+      install:
         - org.mozilla.firefox
-    scope: user
-    install:
-      - org.keepassxc.KeePassXC
-      - com.github.zocker_160.SyncThingy
-      - org.mozilla.Thunderbird
-      - org.onlyoffice.desktopeditors
-      - com.discordapp.Discord
-      - com.anydesk.Anydesk
+      - scope: user
+      install:
+        - org.keepassxc.KeePassXC
+        - com.github.zocker_160.SyncThingy
+        - org.mozilla.Thunderbird
+        - org.onlyoffice.desktopeditors
+        - com.discordapp.Discord
+        - com.anydesk.Anydesk
 
   - type: systemd
     system:
