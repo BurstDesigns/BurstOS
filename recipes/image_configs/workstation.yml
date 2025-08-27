@@ -10,7 +10,7 @@ modules:
     install:
       packages:
         - liquidctl
-        - xorg-x11-nvidia # x11 support on gnome
-        - xorg-x11-xinit
-        - xorg-x11-drv-wacom
+        # - xorg-x11-nvidia # x11 support on gnome
+        # - xorg-x11-xinit
+        # - xorg-x11-drv-wacom
         - Sunshine
