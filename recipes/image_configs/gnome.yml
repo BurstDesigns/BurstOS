@@ -22,7 +22,7 @@ modules:
   - type: gnome-extensions
     install:
       - PaperWM
-      - Tailscale QS
+      # - Tailscale QS
       - Xremap
       - Executor
       - Focused Window D-Bus
