@@ -22,9 +22,9 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - burstos-laptop.yml
-          - burstos-workstation.yml
-          - burstos-gnome-workstation.yml
+          # - burstos-laptop.yml
+          # - burstos-workstation.yml
+          # - burstos-gnome-workstation.yml
           - burstos-gnome-full-workstation.yml
           - burstos-gnome-laptop.yml
     steps:
