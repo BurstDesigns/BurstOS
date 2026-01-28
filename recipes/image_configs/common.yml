@@ -25,6 +25,8 @@ modules:
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
+      skip-unavailable: true
+      skip-broken: true
       packages:
         - emacs
         - emacs-notmuch
