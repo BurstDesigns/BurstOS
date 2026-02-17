@@ -6,7 +6,7 @@ name: burstos-gnome-full-workstation
 description: Personal OS image for VFX and content creation
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/blue-build/base-images/fedora-silverblue-nvidia-gts
+base-image: ghcr.io/blue-build/base-images/fedora-silverblue-nvidia-open
 image-version: 42 # latest is also supported if you want new updates ASAP
 
 modules:
