@@ -8,6 +8,7 @@ modules:
       copr:
         - lizardbyte/stable
     install:
+      skip-unavailable: true
       packages:
         - liquidctl
         # - xorg-x11-nvidia # x11 support on gnome
