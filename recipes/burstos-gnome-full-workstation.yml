@@ -6,7 +6,7 @@ name: burstos-gnome-full-workstation
 description: Personal OS image for VFX and content creation
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-nvidia
+base-image: ghcr.io/blue-build/base-images/fedora-silverblue-nvidia-gts
 image-version: 42 # latest is also supported if you want new updates ASAP
 
 modules:
@@ -15,7 +15,3 @@ modules:
   - from-file: image_configs/gnome.yml
   - from-file: image_configs/workstation.yml
   - from-file: image_configs/vfx-deps.yml
-
-  - type: script
-    snippets:
-      - "mkdir /var/usrlocal/lib/sesi && ln -sf /usr/local/lib/sesi /usr/lib/sesi"
