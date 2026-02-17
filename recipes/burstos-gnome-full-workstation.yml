@@ -18,4 +18,4 @@ modules:
 
   - type: script
     snippets:
-      - "mkdir /usr/local/lib/sesi && ln -sf /usr/local/lib/sesi /usr/lib/sesi"
+      - "mkdir /var/usrlocal/lib/sesi && ln -sf /usr/local/lib/sesi /usr/lib/sesi"
