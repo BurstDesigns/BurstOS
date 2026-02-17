@@ -13,3 +13,7 @@ modules:
   - from-file: image_configs/gnome.yml
   - from-file: image_configs/workstation.yml
   - from-file: image_configs/vfx-deps.yml
+
+  - script:
+      snippets:
+        - "mkdir /usr/local/lib/sesi && ln -sf /usr/local/lib/sesi /usr/lib/sesi"
