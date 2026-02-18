@@ -1,0 +1,7 @@
+# Configs for mobile devices
+
+modules:
+  - type: systemd
+    system:
+      enabled:
+        - tailscaled.service

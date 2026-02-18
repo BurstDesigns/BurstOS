@@ -11,3 +11,4 @@ modules:
 
   - from-file: image_configs/common.yml
   - from-file: image_configs/gnome.yml
+  - from-file: image_configs/laptop.yml

@@ -67,10 +67,4 @@ modules:
           - org.onlyoffice.desktopeditors
           - com.discordapp.Discord
 
-  - type: systemd
-    system:
-      enabled:
-        - tailscaled.service
-        - cockpit.service
-
   - type: signing
