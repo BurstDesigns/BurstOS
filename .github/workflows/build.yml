@@ -24,8 +24,8 @@ jobs:
           # !! Add your recipes here
           # - burstos-laptop.yml
           # - burstos-workstation.yml
-          # - burstos-gnome-workstation.yml
-          - burstos-gnome-full-workstation.yml
+          - burstos-gnome-workstation.yml
+          # - burstos-gnome-full-workstation.yml
           - burstos-gnome-laptop.yml
     steps:
        # the build is fully handled by the reusable github action
