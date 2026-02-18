@@ -36,7 +36,9 @@ modules:
         - tailscale
         - yt-dlp
         - ripgrep
-      exclude:
+        - cockpit
+        - cockpit-podman
+      exclude: # FIX Fedora 43 theses packages get downgraded and break build
         - cpp
         - libgcc
         - libgomp
@@ -64,11 +66,11 @@ modules:
           - org.mozilla.Thunderbird
           - org.onlyoffice.desktopeditors
           - com.discordapp.Discord
-          - com.anydesk.Anydesk
 
   - type: systemd
     system:
       enabled:
         - tailscaled.service
+        - cockpit.service
 
   - type: signing
