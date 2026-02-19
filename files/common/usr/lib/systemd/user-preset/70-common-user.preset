@@ -1,0 +1,2 @@
+enable emacs.service
+enable notmuch-fetch.timer

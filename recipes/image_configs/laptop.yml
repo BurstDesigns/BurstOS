@@ -1,7 +1,8 @@
 # Configs for mobile devices
 
 modules:
-  - type: systemd
-    system:
-      enabled:
-        - tailscaled.service
+
+  - type: files
+    files:
+      - source: laptop # systemd preset files
+        destination: /

@@ -1,0 +1,4 @@
+enable sshd.service
+enable bootc-fetch-apply-updates.timer
+enable system-flatpak-setup.timer
+enable cockpit.socket

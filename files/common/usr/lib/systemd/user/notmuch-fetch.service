@@ -1,0 +1,6 @@
+[Unit]
+Description=Notmuch email fetcher and indexer
+
+[Service]
+Environment=NOTMUCH_CONFIG=%E/notmuch/notmuchrc
+ExecStart=/usr/bin/notmuch new

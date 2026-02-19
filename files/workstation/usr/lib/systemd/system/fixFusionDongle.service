@@ -1,0 +1,9 @@
+[Unit]
+Description=Fixes Fusion License Dongle Permissions
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/maximerv/.local/bin/fixFusionDongle.sh
+
+[Install]
+WantedBy=multi-user.target

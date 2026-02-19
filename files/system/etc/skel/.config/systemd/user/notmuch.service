@@ -1,6 +1,0 @@
-[Unit]
-Description=Notmuch email fetcher and indexer
-
-[Service]
-Environment="NOTMUCH_CONFIG=/home/maximerv/.config/notmuch/notmuchrc"
-ExecStart=distrobox-enter  -n fedora -- /bin/sh -l -c "notmuch new"
