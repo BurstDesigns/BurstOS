@@ -1,0 +1,13 @@
+# NIRI configuration for BurstOS images
+
+modules:
+
+  - type: dnf
+    repos:
+      copr:
+        - yalter/niri
+        - zhangyi6324/noctalia-shell
+    install:
+      packages:
+        - niri
+        - noctalia-shell

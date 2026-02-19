@@ -27,6 +27,7 @@ jobs:
           - burstos-gnome-workstation.yml
           # - burstos-gnome-full-workstation.yml
           - burstos-gnome-laptop.yml
+          - burstos-niri-laptop.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
