@@ -1,0 +1,14 @@
+# image will be published to ghcr.io/<user>/<name>
+name: burstos-niri-laptop
+# description will be included in the image's metadata
+description: Personal OS image for VFX and content creation
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/blue-build/base-images/fedora-silverblue
+image-version: 43 # latest is also supported if you want new updates ASAP
+
+modules:
+
+  - from-file: image_configs/common.yml
+  - from-file: image_configs/niri.yml
+  - from-file: image_configs/laptop.yml
