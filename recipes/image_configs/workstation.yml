@@ -23,7 +23,3 @@ modules:
     files:
       - source: workstation # systemd presets, services, udev rules
         destination: /
-
-  - type: akmods
-    install:
-      - v4l2loopback
