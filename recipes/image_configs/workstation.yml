@@ -25,6 +25,5 @@ modules:
         destination: /
 
   - type: akmods
-    base: common
     install:
       - v4l2loopback
