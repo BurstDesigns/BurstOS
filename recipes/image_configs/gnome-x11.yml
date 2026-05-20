@@ -1,0 +1,12 @@
+# GNOME configuration for BurstOS images
+
+modules:
+
+  - type: dnf
+    repos:
+      copr:
+        - frantisekz/GNOME-X11
+    install:
+      packages:
+        - xorg-x11-xinit
+        - gnome-session-xsession

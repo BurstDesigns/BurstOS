@@ -7,12 +7,13 @@ description: Personal OS image for VFX and content creation
 
 # the base image to build on top of (FROM) and the version tag to use
 # base-image: ghcr.io/blue-build/base-images/fedora-silverblue-nvidia-open
-base-image: ghcr.io/blue-build/base-images/fedora-silverblue-nvidia
+base-image: ghcr.io/blue-build/base-images/fedora-silverblue-nvidia-open
 image-version: 43 # latest is also supported if you want new updates ASAP
 
 modules:
 
   - from-file: image_configs/common.yml
   - from-file: image_configs/gnome.yml
+  - from-file: image_configs/gnome-x11.yml
   - from-file: image_configs/workstation.yml
   - from-file: image_configs/vfx-deps.yml
