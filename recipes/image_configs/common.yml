@@ -38,22 +38,11 @@ modules:
         - ripgrep
         - cockpit
         - cockpit-podman
-        - https://github.com/OpenTabletDriver/OpenTabletDriver/releases/latest/download/opentabletdriver-0.6.7-1.x86_64.rpm
-      exclude: # FIX Fedora 43 theses packages get downgraded and break build
-        - cpp
-        - libgcc
-        - libgomp
     remove:
       auto-remove: false
       packages:
         - firefox # default firefox removed in favor of flatpak
         - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
-
-#   - type: bling # configure what to pull in from ublue-os/bling
-#     install:
-#       - justfiles
-#         # add "!include /usr/share/ublue-os/just/100-bling.just"
-#         # in your custom.just (added by default) or local justfile
 
   - type: default-flatpaks
     configurations:
