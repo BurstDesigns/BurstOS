@@ -38,10 +38,11 @@ modules:
         - ripgrep
         - cockpit
         - cockpit-podman
-      exclude: # FIX Fedora 43 theses packages get downgraded and break build
-        - cpp
-        - libgcc
-        - libgomp
+        - https://github.com/OpenTabletDriver/OpenTabletDriver/releases/latest/download/opentabletdriver-0.6.7-1.x86_64.rpm
+      # exclude: # FIX Fedora 43 theses packages get downgraded and break build
+      #   - cpp
+      #   - libgcc
+      #   - libgomp
     remove:
       auto-remove: false
       packages:
