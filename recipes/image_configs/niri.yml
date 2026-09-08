@@ -6,8 +6,10 @@ modules:
     repos:
       copr:
         - yalter/niri
-        - zhangyi6324/noctalia-shell
+        - avengemedia/dms-git
+        # - zhangyi6324/noctalia-shell
     install:
       packages:
         - niri
-        - noctalia-shell
+        # - noctalia-shell
+        - dms
