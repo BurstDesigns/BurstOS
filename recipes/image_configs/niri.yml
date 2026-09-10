@@ -7,9 +7,19 @@ modules:
       copr:
         - yalter/niri
         - avengemedia/dms-git
+        - avengemedia/danklinux
         # - zhangyi6324/noctalia-shell
+        - blakegardner/xremap
     install:
       packages:
+        - zenity
+        - xremap-niri
         - niri
         # - noctalia-shell
         - dms
+        - dankcalendar-git
+    remove:
+      auto-remove: false
+      packages:
+        - waybar
+        - fuzzel

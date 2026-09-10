@@ -12,3 +12,7 @@ modules:
   - from-file: image_configs/common.yml
   - from-file: image_configs/niri.yml
   - from-file: image_configs/laptop.yml
+
+  - type: os-release
+    properties:
+      PRETTY_NAME: BurstOS Laptop (Niri)
