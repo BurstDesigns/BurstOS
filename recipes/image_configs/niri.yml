@@ -18,8 +18,7 @@ modules:
         # - noctalia-shell
         - dms
         - dankcalendar-git
-    remove:
-      auto-remove: false
-      packages:
+      exclude:
+        - alacritty
         - waybar
         - fuzzel

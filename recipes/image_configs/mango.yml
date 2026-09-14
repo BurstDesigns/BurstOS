@@ -1,0 +1,19 @@
+# MANGO configuration for BurstOS images
+
+modules:
+
+  - type: dnf
+    repos:
+      files:
+        - https://repos.fyralabs.com/terra%OS_VERSION%
+      copr:
+        - avengemedia/dms-git
+        - avengemedia/danklinux
+        - blakegardner/xremap
+    install:
+      packages:
+        - zenity
+        - dms
+        - dankcalendar-git
+        - xremap
+        - mangowm
