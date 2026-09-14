@@ -16,3 +16,8 @@ modules:
         - dankcalendar-git
         - xremap
         - mangowm
+
+  - type: files
+    files:
+      - source: mango
+        destination: /

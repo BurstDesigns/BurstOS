@@ -1,0 +1,12 @@
+[Unit]
+Description=Xremap key remapping daemon
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/xremap %E/xremap/config.yaml
+Restart=on-failure
+StandardOuput=file:%h/log_file
+
+[Install]
+WantedBy=graphical-session.target
