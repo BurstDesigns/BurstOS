@@ -4,12 +4,11 @@ modules:
 
   - type: dnf
     repos:
-      files:
-        - https://repos.fyralabs.com/terra%OS_VERSION%
       copr:
         - avengemedia/dms-git
         - avengemedia/danklinux
         - blakegardner/xremap
+        - kaleedtc/mangowm
     install:
       packages:
         - zenity
