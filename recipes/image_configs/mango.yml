@@ -17,6 +17,7 @@ modules:
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
         - nautilus
+        - ptyxis
         - sushi
         - dms
         - dankcalendar-git
