@@ -12,6 +12,12 @@ modules:
     install:
       packages:
         - zenity
+        - dms-greeter-git
+        - gnome-keyring
+        - xdg-desktop-portal-gtk
+        - xdg-desktop-portal-gnome
+        - nautilus
+        - sushi
         - dms
         - dankcalendar-git
         - xremap
