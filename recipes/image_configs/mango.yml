@@ -14,6 +14,7 @@ modules:
         - zenity
         - dms-greeter-git
         - gnome-keyring
+        - gcr
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
         - nautilus
