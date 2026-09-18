@@ -1,3 +1,2 @@
 enable xremap.service
 enable gcr-ssh-agent.socket
-enable gnome-keyring.socket
