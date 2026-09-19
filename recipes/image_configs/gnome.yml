@@ -4,9 +4,9 @@ modules:
 
   - type: dnf
     repos:
-      cleanup: true
       copr:
         - blakegardner/xremap
+      cleanup: true
     install:
       packages:
         - zenity

@@ -31,9 +31,9 @@ modules:
 
   - type: dnf
     repos:
-      cleanup: true
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      cleanup: true
     install:
       packages:
         - emacs-notmuch

@@ -4,13 +4,13 @@ modules:
 
   - type: dnf
     repos:
-      cleanup: true
       copr:
         - yalter/niri
         - avengemedia/dms-git
         - avengemedia/danklinux
         # - zhangyi6324/noctalia-shell
         - blakegardner/xremap
+      cleanup: true
     install:
       packages:
         - zenity
