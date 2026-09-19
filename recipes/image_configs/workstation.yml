@@ -4,6 +4,7 @@ modules:
 
   - type: dnf
     repos:
+      cleanup: true
       nonfree: negativo17
       copr:
         - lizardbyte/stable

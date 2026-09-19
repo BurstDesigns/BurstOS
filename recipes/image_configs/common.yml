@@ -22,11 +22,20 @@ modules:
 
   - type: dnf
     repos:
+      cleanup: true
+      copr:
+        - alternateved/igc-emacs
+      install:
+        packages:
+          - emacs
+
+  - type: dnf
+    repos:
+      cleanup: true
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     install:
       packages:
-        - emacs
         - emacs-notmuch
         - notmuch
         - isync
