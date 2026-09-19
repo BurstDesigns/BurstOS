@@ -22,12 +22,12 @@ modules:
 
   - type: dnf
     repos:
-      cleanup: true
       copr:
         - alternateved/igc-emacs
-      install:
-        packages:
-          - emacs
+      cleanup: true
+    install:
+      packages:
+        - emacs
 
   - type: dnf
     repos:
