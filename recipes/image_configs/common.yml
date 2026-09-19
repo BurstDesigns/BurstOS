@@ -23,7 +23,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - alternateved/igc-emacs
+        - mkacer/Emacs_Latest_Stable
       cleanup: true
     install:
       packages:
