@@ -23,7 +23,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - mkacer/Emacs_Latest_Stable
+        - alternateved/bleeding-emacs
       cleanup: true
     install:
       packages:
