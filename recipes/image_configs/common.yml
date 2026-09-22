@@ -22,18 +22,23 @@ modules:
 
   - type: dnf
     repos:
+      files:
+        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      cleanup: true
+    install:
+      packages:
+        - tailscale
+
+  - type: dnf
+    repos:
       copr:
         - alternateved/bleeding-emacs
       cleanup: true
     install:
       packages:
-        - emacs
+        - emacs-pgtk
 
   - type: dnf
-    repos:
-      files:
-        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-      cleanup: true
     install:
       packages:
         - emacs-notmuch
