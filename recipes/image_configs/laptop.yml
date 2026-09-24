@@ -6,3 +6,9 @@ modules:
     files:
       - source: laptop # systemd preset files
         destination: /
+
+  - type: dnf
+    install:
+      packages:
+        - power-profiles-daemon
+        - cups-pk-helper

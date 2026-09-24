@@ -5,15 +5,37 @@ modules:
   - type: dnf
     repos:
       copr:
-        - avengemedia/dms-git
-        - avengemedia/danklinux
-        - blakegardner/xremap
         - kaleedtc/mangowm
       cleanup: true
     install:
       packages:
-        - zenity
+        - mangowm
+
+  - type: dnf
+    repos:
+      copr:
+        - avengemedia/dms-git
+        - avengemedia/danklinux
+      cleanup: true
+    install:
+      packages:
         - dms-greeter-git
+        - dms
+        - dankcalendar-git
+
+  - type: dnf
+    repos:
+      copr:
+        - blakegardner/xremap
+      cleanup: true
+    install:
+      packages:
+        - xremap
+
+  - type: dnf
+    install:
+      packages:
+        - kf6-kimageformats
         - gnome-keyring
         - gnome-keyring-pam
         - gcr
@@ -22,10 +44,7 @@ modules:
         - nautilus
         - ptyxis
         - sushi
-        - dms
-        - dankcalendar-git
-        - xremap
-        - mangowm
+        - zenity
 
   - type: files
     files:
