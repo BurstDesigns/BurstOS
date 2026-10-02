@@ -45,6 +45,8 @@ modules:
         - ptyxis
         - sushi
         - zenity
+        - power-profiles-daemon
+        - cups-pk-helper
 
   - type: files
     files:
