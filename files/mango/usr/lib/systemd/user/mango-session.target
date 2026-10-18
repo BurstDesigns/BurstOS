@@ -3,3 +3,4 @@ Description=MangoWC Session Target
 Requires=graphical-session.target
 After=graphical-session.target
 Wants=dms.service
+Wants=xdg-desktop-autostart.target
