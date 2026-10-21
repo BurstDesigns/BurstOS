@@ -39,12 +39,26 @@ modules:
         - emacs-pgtk
 
   - type: dnf
+    repos:
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    install:
+      packages:
+        - terra-release
+
+  - type: dnf
+    install:
+      packages:
+        - ghostty
+
+  - type: dnf
     install:
       packages:
         - emacs-notmuch
         - notmuch
         - isync
         - msmtp
+        - sasl-xoauth2
         - mpv
         - git-lfs
         - tailscale
@@ -52,6 +66,7 @@ modules:
         - ripgrep
         - cockpit
         - cockpit-podman
+
     remove:
       auto-remove: false
       packages:
