@@ -26,8 +26,8 @@ jobs:
           # - burstos-workstation.yml
           - burstos-gnome-workstation.yml
           # - burstos-gnome-full-workstation.yml
-          - burstos-gnome-laptop.yml
-          - burstos-niri-laptop.yml
+          # - burstos-gnome-laptop.yml
+          # - burstos-niri-laptop.yml
           - burstos-mango-laptop.yml
     steps:
        # the build is fully handled by the reusable github action

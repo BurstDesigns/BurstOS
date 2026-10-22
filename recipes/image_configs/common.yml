@@ -40,6 +40,16 @@ modules:
 
   - type: dnf
     repos:
+      copr:
+        - phrdina/cyrus-sasl-xoauth2
+      cleanup: true
+    install:
+      packages:
+        - cyrus-sasl-xoauth2
+
+
+  - type: dnf
+    repos:
       files:
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     install:
@@ -58,7 +68,6 @@ modules:
         - notmuch
         - isync
         - msmtp
-        - sasl-xoauth2
         - mpv
         - git-lfs
         - tailscale
