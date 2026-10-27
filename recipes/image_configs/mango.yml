@@ -3,10 +3,6 @@
 modules:
 
   - type: dnf
-    repos:
-      copr:
-        - kaleedtc/mangowm
-      cleanup: true
     install:
       packages:
         - mangowm
@@ -22,6 +18,7 @@ modules:
         - dms-greeter-git
         - dms
         - dankcalendar-git
+        - dux-files-git
 
   - type: dnf
     repos:
@@ -42,7 +39,7 @@ modules:
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
         - nautilus
-        - ptyxis
+        # - ptyxis
         - sushi
         - zenity
         - power-profiles-daemon
