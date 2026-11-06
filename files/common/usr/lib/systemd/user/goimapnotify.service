@@ -3,7 +3,7 @@ Description=IMAP IDLE notifier for lumivision
 
 [Service]
 Type=simple
-ExecStart=$HOME/.local/bin/goimapnotify
+ExecStart=/home/maximerv/.local/bin/goimapnotify
 Restart=on-failure
 RestartSec=5
 
