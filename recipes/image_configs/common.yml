@@ -64,8 +64,21 @@ modules:
   - type: dnf
     install:
       packages:
+        - python3-msal
+        - python3-pyxdg
+        - python3-gnupg
+
+  - type: script
+    snippets:
+      - "curl -fsSL https://github.com/dsh2dsh/goimapnotify/releases/download/v2.8.1/goimapnotify_2.8.1_linux_amd64.tar.gz -o /tmp/gin.tar.gz && tar -xzf /tmp/gin.tar.gz -C /tmp && install -m 0755 /tmp/goimapnotify /usr/bin/goimapnotify && rm -f /tmp/goimapnotify /tmp/gin.tar.gz"
+      - "curl -fsSL https://github.com/harishkrupo/oauth2ms/raw/main/oauth2ms -o /usr/bin/oauth2ms && chmod 0755 /usr/bin/oauth2ms"
+
+  - type: dnf
+    install:
+      packages:
         - emacs-notmuch
         - notmuch
+        - yq
         - isync
         - msmtp
         - mpv
@@ -75,7 +88,6 @@ modules:
         - ripgrep
         - cockpit
         - cockpit-podman
-
     remove:
       auto-remove: false
       packages:
