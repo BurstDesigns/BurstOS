@@ -3,6 +3,7 @@ Description=IMAP IDLE notifier for lumivision
 
 [Service]
 Type=simple
+Environment=NOTMUCH_CONFIG=%E/notmuch/notmuchrc
 ExecStart=/usr/bin/goimapnotify
 Restart=on-failure
 RestartSec=5
