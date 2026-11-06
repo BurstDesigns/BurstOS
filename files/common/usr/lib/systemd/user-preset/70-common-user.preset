@@ -1,3 +1,4 @@
 enable emacs.service
-enable notmuch-fetch.timer
+enable goimapnotify.service
+enable mbsync-fetch.timer
 enable user-flatpak-setup.timer

@@ -1,0 +1,10 @@
+[Unit]
+Description=MBsync email fetcher
+
+[Timer]
+OnCalendar=*:00
+Unit=mbsync-fetch.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target

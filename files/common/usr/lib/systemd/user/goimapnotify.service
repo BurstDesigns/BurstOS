@@ -1,0 +1,11 @@
+[Unit]
+Description=IMAP IDLE notifier for lumivision
+
+[Service]
+Type=simple
+ExecStart=$HOME/.local/bin/goimapnotify
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

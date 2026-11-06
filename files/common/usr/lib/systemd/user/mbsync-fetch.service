@@ -1,0 +1,5 @@
+[Unit]
+Description=MBsync email fetcher and indexer
+
+[Service]
+ExecStart=/usr/bin/mbsync -qa -c %E/isync/mbsyncrc
