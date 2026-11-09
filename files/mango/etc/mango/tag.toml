@@ -1,0 +1,5 @@
+# layout support:
+# tile,scroller,grid,deck,monocle,center_tile,vertical_tile,vertical_scroller
+[[rule.tag_rule]]
+id = "*"
+layout_name = title

@@ -1,0 +1,139 @@
+[bind.default]
+
+# Key Bindings
+# key name refer to `xev` or `wev` command output,
+# mod keys name: super,ctrl,alt,shift,none
+
+# key_mode=common
+# reload config
+# "SUPER+r" = "reload_config"
+
+# menu and terminal
+# "Alt+Space"   = "spawn,rofi -show drun"
+# "Alt+Return"  =  "spawn,ptyxis"
+
+# exit
+# "SUPER+m" = "quit"
+"SUPER+backspace" = "killclient"
+
+# switch window focus
+"SUPER+d" = "focusstack,next"
+"SUPER+a" = "focusstack,prev"
+# "SUPER+a" = "focusdir,left"
+# "SUPER+d" = "focusdir,right"
+# "SUPER+w" = "focusdir,up"
+# "SUPER+s" = "focusdir,down"
+
+# swap window
+# "SUPER+SHIFT+w" = "exchange_client,up"
+# "SUPER+SHIFT+s" = "exchange_client,down"
+# "SUPER+SHIFT+a" = "exchange_client,left"
+# "SUPER+SHIFT+d" = "exchange_client,right"
+"SUPER+SHIFT+a" = "exchange_stack_client,next"
+"SUPER+SHIFT+d" = "exchange_stack_client,prev"
+
+
+# switch window status
+"SUPER+g"         = "toggleglobal,"
+"SUPER+backslash" = "togglefloating,"
+"SUPER+f"         = "togglemaximizescreen,"
+# "ALT+f"           = "togglefullscreen,"
+# "ALT+SHIFT+f"     = "togglefakefullscreen,"
+# "SUPER+i"         = "minimized,"
+"SUPER+o" = "toggleoverlay,"
+# SUPER+SHIFT,I,restore_minimized
+"ALT+z" = "toggle_scratchpad"
+
+# groups
+"SUPER+SHIFT+i" = "groupjoin,right"
+"SUPER+SHIFT+o" = "groupleave"
+
+# scroller layout
+"SUPER+r" = "switch_proportion_preset"
+# alt+super+ctrl,Left,scroller_stack,left
+# alt+super+ctrl,Right,scroller_stack,right
+# alt+super+ctrl,Up,scroller_stack,up
+# alt+super+ctrl,Down,scroller_stack,down
+
+#dwindle layout(manual split mode)
+# alt+shift,Return,dwindle_toggle_split_direction
+
+# switch layout
+"SUPER+space" = "switch_layout"
+
+# tag switch
+# SUPER,Left,viewtoleft,0
+# CTRL,Left,viewtoleft_have_client,0
+# SUPER,Right,viewtoright,0
+# CTRL,Right,viewtoright_have_client,0
+# CTRL+SUPER,Left,tagtoleft,0
+# CTRL+SUPER,Right,tagtoright,0
+
+"SUPER+1" = "view,1"
+"SUPER+2" = "view,2"
+"SUPER+3" = "view,3"
+"SUPER+4" = "view,4"
+"SUPER+5" = "view,5"
+"SUPER+6" = "view,6"
+"SUPER+7" = "view,7"
+"SUPER+8" = "view,8"
+"SUPER+9" = "view,9"
+
+# tag: move client to the tag and focus it
+# tagsilent: move client to the tag and not focus it
+"SUPER+Shift+1" = "tag,1"
+"SUPER+Shift+2" = "tag,2"
+"SUPER+Shift+3" = "tag,3"
+"SUPER+Shift+4" = "tag,4"
+"SUPER+Shift+5" = "tag,5"
+"SUPER+Shift+6" = "tag,6"
+"SUPER+Shift+7" = "tag,7"
+"SUPER+Shift+8" = "tag,8"
+"SUPER+Shift+9" = "tag,9"
+
+# monitor switch
+"ALT+SHIFT+Left"  = "focusmon,left"
+"ALT+SHIFT+Right" = "focusmon,righ"
+"SUPER+ALT+Left"  = "tagmon,left"
+"SUPER+ALT+Right" = "tagmon,right"
+
+# gaps
+# ALT+SHIFT,X,incgaps,1
+# ALT+SHIFT,Z,incgaps,-1
+# ALT+SHIFT,R,togglegaps
+
+# movewin
+"CTRL+SHIFT+Up"    = "movewin,+0,-50"
+"CTRL+SHIFT+Down"  = "movewin,+0,+50"
+"CTRL+SHIFT+Left"  = "movewin,-50,+0"
+"CTRL+SHIFT+Right" = "movewin,+50,+0"
+
+# resizewin
+"CTRL+ALT+Up"    = "resizewin,+0,-50"
+"CTRL+ALT+Down"  = "resizewin,+0,+50"
+"CTRL+ALT+Left"  = "resizewin,-50,+0"
+"CTRL+ALT+Right" = "resizewin,+50,+0"
+
+# Mouse Button Bindings
+# btn_left and btn_right can't bind none mod key
+[mousebind.default]
+"SUPER+btn_left"  = "moveresize,curmove"
+# "NONE+btn_middle" = "togglemaximizescreen,0"
+"SUPER+btn_right" = "moveresize,curresize"
+
+
+# Axis Bindings
+[axisbind.default]
+# SUPER,UP,viewtoleft_have_client
+# SUPER,DOWN,viewtoright_have_client
+
+# Gesture Bindings
+[gesturebind.default]
+"NONE+Left+3" =  "focusdir,left"
+"NONE+Right+3" = "focusdir,ri"
+"NONE+Up+3"    = "focusdir,up"
+"NONE+Down+3"  = "focusdir,down"
+"NONE+Right+4" = "viewprev_have_client"
+"NONE+Left+4"  = "viewnext_have_client"
+"NONE+Up+4"    = "enteroverview"
+"NONE+Down+4"  = "leaveoverview"

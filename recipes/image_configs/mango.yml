@@ -44,6 +44,7 @@ modules:
         - zenity
         - power-profiles-daemon
         - cups-pk-helper
+        - https://github.com/lamco-admin/lamco-rdp-server/releases/download/v1.4.5/lamco-rdp-server-1.4.5-1.fc44.src.rpm
 
   - type: files
     files:
