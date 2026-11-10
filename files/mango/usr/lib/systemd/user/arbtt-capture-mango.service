@@ -1,0 +1,14 @@
+[Unit]
+Description=arbtt capture for MangoWM (ext-idle-notify-v1)
+After=mango-session.target
+PartOf=mango-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/lib/arbtt-venv/bin/python %h/.local/bin/arbtt-capture-mango-idle.py
+Restart=on-failure
+RestartSec=5
+Environment=ARBTT_SAMPLE_INTERVAL=60
+
+[Install]
+WantedBy=mango-session.target
