@@ -37,6 +37,8 @@ modules:
         - gcr
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
+        - xdg-desktop-portal-wlr
+        - wayvnc
         - nautilus
         # - ptyxis
         - sushi
@@ -45,13 +47,15 @@ modules:
         - cups-pk-helper
         - pcre # for arbtt-stats
 
-  - type: dnf
-    repos:
-      nonfree: rpmfusion
-      cleanup: true
-    install:
-      packages:
-        - lamco-rdp-server
+  # Issue #78 waiting for fix
+  # - type: dnf
+  #   repos:
+  #     nonfree: rpmfusion
+  #     cleanup: true
+  #   install:
+  #     packages:
+  #       - lamco-rdp-server
+  #       # - openh264 ## ??
 
   - type: files
     files:
