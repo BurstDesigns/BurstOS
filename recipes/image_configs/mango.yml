@@ -48,11 +48,10 @@ modules:
   - type: dnf
     repos:
       nonfree: rpmfusion
+      cleanup: true
     install:
       packages:
-        - repo: rpmfusion
-          packages:
-            - lamco-rdp-server
+        - lamco-rdp-server
 
   - type: files
     files:
