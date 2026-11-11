@@ -46,9 +46,13 @@ modules:
         - pcre # for arbtt-stats
 
   - type: dnf
+    repos:
+      nonfree: rpmfusion
     install:
       packages:
-        - https://github.com/lamco-admin/lamco-rdp-server/releases/download/v1.4.5/lamco-rdp-server-1.4.5-1.fc44.src.rpm
+        - repo: rpmfusion
+          packages:
+            - lamco-rdp-server
 
   - type: files
     files:
