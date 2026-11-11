@@ -1,1 +1,2 @@
 enable greetd.service
+enable wayvnc-greeter.path

@@ -1,0 +1,9 @@
+[Unit]
+Description=Wait for greeter Wayland socket
+
+[Path]
+PathExists=/run/user/967/wayland-0
+Unit=wayvnc-greeter.service
+
+[Install]
+WantedBy=multi-user.target

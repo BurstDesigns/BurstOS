@@ -1,0 +1,12 @@
+[Unit]
+Description=WayVNC (greeter)
+
+[Service]
+Type=simple
+User=greeter
+Environment=XDG_RUNTIME_DIR=/run/user/967
+Environment=WAYLAND_DISPLAY=wayland-0
+ExecStart=/bin/sh -c '/usr/bin/wayvnc 0.0.0.0 5901; exit 0'
+
+[Install]
+WantedBy=multi-user.target
