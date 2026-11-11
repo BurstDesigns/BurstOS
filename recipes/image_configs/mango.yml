@@ -10,12 +10,11 @@ modules:
   - type: dnf
     repos:
       copr:
-        - avengemedia/dms-git
-        - avengemedia/danklinux
+        - duxlabs/dms-git
       cleanup: true
     install:
       packages:
-        - dms-greeter-git
+        - dux-greeter-git
         - dms
         - dankcalendar-git
         - dux-files-git
@@ -44,6 +43,11 @@ modules:
         - zenity
         - power-profiles-daemon
         - cups-pk-helper
+        - pcre # for arbtt-stats
+
+  - type: dnf
+    install:
+      packages:
         - https://github.com/lamco-admin/lamco-rdp-server/releases/download/v1.4.5/lamco-rdp-server-1.4.5-1.fc44.src.rpm
 
   - type: files
