@@ -16,7 +16,7 @@ modules:
       packages:
         - dux-greeter-git
         - dms
-        - dankcalendar-git
+        - dux-calendar-git
         - dux-files-git
 
   - type: dnf
@@ -47,6 +47,7 @@ modules:
         - cups-pk-helper
         - pcre # for arbtt-stats
         - tigervnc
+        - wlr-randr
 
   - type: dnf
     repos:
