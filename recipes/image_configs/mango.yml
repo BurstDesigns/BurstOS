@@ -46,11 +46,12 @@ modules:
         - power-profiles-daemon
         - cups-pk-helper
         - pcre # for arbtt-stats
+        - tigervnc
 
   - type: dnf
     repos:
       copr:
-        - "@nightdrive/nightdrive"
+        - burstdesigns/burstos-packages
       cleanup: true
     install:
       packages:
