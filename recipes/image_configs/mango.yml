@@ -38,7 +38,7 @@ modules:
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
         - xdg-desktop-portal-wlr
-        - wayvnc
+        # - wayvnc # broken in Fedora 44-45 on nvidia
         - nautilus
         # - ptyxis
         - sushi
@@ -46,6 +46,15 @@ modules:
         - power-profiles-daemon
         - cups-pk-helper
         - pcre # for arbtt-stats
+
+  - type: dnf
+    repos:
+      copr:
+        - nightdrive/nightdrive
+      cleanup: true
+    install:
+      packages:
+        - wayvnc
 
   # Issue #78 waiting for fix
   # - type: dnf
