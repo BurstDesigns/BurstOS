@@ -24,7 +24,7 @@ jobs:
           # !! Add your recipes here
           # - burstos-laptop.yml
           # - burstos-workstation.yml
-          - burstos-gnome-workstation.yml
+          # - burstos-gnome-workstation.yml
           - burstos-mango-workstation.yml
           - burstos-nas.yml
           # - burstos-gnome-full-workstation.yml

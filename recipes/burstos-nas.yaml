@@ -11,7 +11,6 @@ modules:
 
   - from-file: image_configs/nas.yml
 
-
   - type: os-release
     properties:
       PRETTY_NAME: BurstOS NAS
