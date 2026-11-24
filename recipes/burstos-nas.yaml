@@ -1,0 +1,17 @@
+# image will be published to ghcr.io/<user>/<name>
+name: burstos-nas
+# description will be included in the image's metadata
+description: Personal OS image for VFX and content creation NAS
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/blue-build/base-images/fedora-base
+image-version: 45 # latest is also supported if you want new updates ASAP
+
+modules:
+
+  - from-file: image_configs/nas.yml
+
+
+  - type: os-release
+    properties:
+      PRETTY_NAME: BurstOS NAS

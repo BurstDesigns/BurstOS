@@ -1,0 +1,44 @@
+# Tailscale configuration for BurstOS images
+
+modules:
+
+  - type: dnf
+    repos:
+      files:
+        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      cleanup: true
+    install:
+      packages:
+        - tailscale
+
+  - type: dnf
+    install:
+      packages:
+        - lm_sensors
+        - cockpit
+        - cockpit-kdump
+        - cockpit-networkmanager
+        - cockpit-podman
+        - cockpit-selinux
+        - cockpit-storaged
+        - cockpit-system
+        - cockpit-ostree
+        - cockpit-sosreport
+        - mdadm
+        - pcp
+        - podman
+        - samba
+        - smartmontools
+        - nfs-utils
+        - node-exporter
+        - prometheus
+        - rclone
+        - sg3_utils
+        - ethtool
+        - iperf3
+        - fail2ban
+
+  # - type: files
+  #   files:
+  #     - source: nas # systemd presets, services, udev rules
+  #       destination: /
