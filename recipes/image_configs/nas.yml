@@ -37,6 +37,7 @@ modules:
         - ethtool
         - iperf3
         - fail2ban
+        - lsscsi
 
   # - type: files
   #   files:
