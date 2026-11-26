@@ -72,7 +72,7 @@ modules:
     snippets:
       - "curl -fsSL https://github.com/dsh2dsh/goimapnotify/releases/download/v2.8.1/goimapnotify_2.8.1_linux_amd64.tar.gz -o /tmp/gin.tar.gz && tar -xzf /tmp/gin.tar.gz -C /tmp && install -m 0755 /tmp/goimapnotify /usr/bin/goimapnotify && rm -f /tmp/goimapnotify /tmp/gin.tar.gz"
       - "curl -fsSL https://github.com/harishkrupo/oauth2ms/raw/main/oauth2ms -o /usr/bin/oauth2ms && chmod 0755 /usr/bin/oauth2ms"
-      - "curl -fsSL https://github.com/EasyTier/EasyTier/releases/download/v2.7.1/easytier-linux-x86_64-v2.7.1.zip -o /tmp/ezt.zip && unzip -j /tmp/ezt.zip -d /tmp/ezt && install -m 0755 /tmp/easytier-cli /usr/bin/easytier-cli && install -m 0755 /tmp/easytier-core /usr/bin/easytier-core && rm -rf /tmp/ezt.zip /tmp/ezt"
+      - "curl -fsSL https://github.com/EasyTier/EasyTier/releases/download/v2.7.1/easytier-linux-x86_64-v2.7.1.zip -o /tmp/ezt.zip && unzip -j /tmp/ezt.zip -d /tmp/ezt && install -m 0755 /tmp/ezt/easytier-cli /usr/bin/easytier-cli && install -m 0755 /tmp/ezt/easytier-core /usr/bin/easytier-core && rm -rf /tmp/ezt.zip /tmp/ezt"
 
   - type: dnf
     install:
