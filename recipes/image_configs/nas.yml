@@ -16,6 +16,7 @@ modules:
       packages:
         - lm_sensors
         - cockpit
+        - cockpit-files
         - cockpit-kdump
         - cockpit-networkmanager
         - cockpit-podman
@@ -38,6 +39,11 @@ modules:
         - iperf3
         - fail2ban
         - lsscsi
+
+  - type: script
+    snippets:
+      - "curl -fsSL https://github.com/EasyTier/EasyTier/releases/download/v2.7.1/easytier-linux-x86_64-v2.7.1.zip -o /tmp/ezt.zip && unzip -j /tmp/ezt.zip -d /tmp/ezt && install -m 0755 /tmp/ezt/easytier-cli /usr/bin/easytier-cli && install -m 0755 /tmp/ezt/easytier-core /usr/bin/easytier-core && rm -rf /tmp/ezt.zip /tmp/ezt"
+
 
   # - type: files
   #   files:
